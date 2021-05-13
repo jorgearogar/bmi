@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="left"
+    android:background="#10DCF6"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="BMI"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="WEIGHT (KG)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"></TextView>
+
+
+    <EditText
+        android:id="@+id/w"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+        android:hint="IN KGs"
+        android:inputType="numberDecimal"
+        android:textColor="#F4F1F1">
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="HEIGHT (CM)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"></TextView>
+
+
+    <EditText
+        android:id="@+id/h"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:ems="10"
+        android:hint="IN CMs"
+        android:inputType="numberDecimal"
+        android:textColor="#EDECEC"></EditText>
+
+
+    <Button
+        android:id="@+id/ib1"
+        android:layout_width="232dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:nextFocusRight="@color/black"
+        android:text="Calculate"
+        android:textColor="#121010"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:backgroundTint="#EFEBEB" />
+
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
